@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="3.0.1" />
+    <PackageReference Include="Amazon.Extensions.CognitoAuthentication" Version="2.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBoard.Identity.Abstractions\ProjectBoard.Identity.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

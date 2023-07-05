@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<DisableTransitiveProjectReferences>true</DisableTransitiveProjectReferences>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBoard.Data.Abstractions\ProjectBoard.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\ProjectBoard.Data\ProjectBoard.Data.csproj" />
+    <ProjectReference Include="..\ProjectBoard.Identity.Abstractions\ProjectBoard.Identity.Abstractions.csproj" />
+    <ProjectReference Include="..\ProjectBoard.Identity\ProjectBoard.Identity.csproj" />
+  </ItemGroup>
+
+</Project>

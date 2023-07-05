@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>181f7db6-e970-43a5-a00a-ec2e7bc8c59c</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PipelineBehaviors\**" />
+    <Content Remove="PipelineBehaviors\**" />
+    <EmbeddedResource Remove="PipelineBehaviors\**" />
+    <None Remove="PipelineBehaviors\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBoard.Data.Abstractions\ProjectBoard.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\ProjectBoard.Identity.Abstractions\ProjectBoard.Identity.Abstractions.csproj" />
+    <ProjectReference Include="..\ProjectBoard.Infrastructure\ProjectBoard.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
