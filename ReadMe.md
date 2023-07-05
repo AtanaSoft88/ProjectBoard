@@ -13,5 +13,5 @@ Following technologies included:
 - Used Validation Behaviour pipeline implementation, so that any input error occurrence will be handled before getting into the MediatR handlers.
 
 # Gallery 
-![title](gallery/ProjectBoard API_1.png)
-![title](gallery/ProjectBoard API_2.png)
+![title](gallery/ProjectBoardAPI1.png)
+![title](gallery/ProjectBoardAPI2.png)
